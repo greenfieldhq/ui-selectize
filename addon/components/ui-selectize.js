@@ -10,7 +10,7 @@ const convertStringToArray = function(data) {
   return new A(data);
 };
 const objectifyString = function(thingy) {
-  return typeOf(thingy) === 'string' ? {id: camelize(thingy), name: thingy} : thingy;
+  return typeOf(thingy) === 'string' ? {id: thingy, name: thingy} : thingy;
 };
 
 export default Ember.Component.extend(MoodManager,SizeManager,StyleManager,ApiSurface,{
